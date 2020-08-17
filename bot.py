@@ -140,7 +140,7 @@ async def emoji(ctx):
 # Get weather
 @client.command(aliases=['weather', 'temp', 'temperature'])
 async def current_temp(ctx, zip_code, country_code="us"):
-    api_key = "92d9b44cceb8ddfd0b87c7339e23b367"
+    api_key = ""
     temp_request = requests.get(f"https://api.openweathermap.org/data/2.5/weather?zip={zip_code},{country_code}&appid={api_key}").json()
     city_name = temp_request["name"]
     condition = temp_request["weather"][0]["main"]
@@ -165,4 +165,4 @@ async def current_temp(ctx, zip_code, country_code="us"):
 
 # countdown(10)
 
-client.run('NzQ0NzU3ODM3NDYwNDA2MzMy.Xzn3yQ.IkMdHti9Znrb58yWpVNymYw8YMw') # Inside is the key & finishes the connection to discord.
+client.run('') # Inside is the key & finishes the connection to discord.
