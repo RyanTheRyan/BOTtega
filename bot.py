@@ -20,7 +20,7 @@ async def on_ready():
 @client.event
 async def on_member_join(member): # When a member joins
     channel = client.get_channel(744973486115651735)
-    await channel.send(f'The amazing {memeber} has joined! ✍(◔◡◔)')
+    await channel.send(f'A player has joined! ✍(◔◡◔)')
 
     embed = discord.Embed(
     title = 'Welcome to your Class!',
@@ -133,10 +133,7 @@ async def emoji(ctx):
         '✍(◔◡◔)',
         '(✖╭╮✖)',
         '( ͡°👅 ͡°)',
-        '༼ﾉຈل͜ຈ༽ﾉ︵┻━┻',
-        '♪♫*•♪',
-        '(︶^︶)',
-        '¯\_( ͡° ͜ʖ ͡°)_/¯'
+        '༼ﾉຈل͜ຈ༽ﾉ︵┻━┻'
     ]
     await ctx.send(random.choice(smiley_faces))
 
@@ -168,4 +165,4 @@ async def current_temp(ctx, zip_code, country_code="us"):
 
 # countdown(10)
 
-client.run('NzQ0NzU3ODM3NDYwNDA2MzMy.Xzn3yQ.GcUo2x_JudZ5dLOfp_Ye_shtJbw') # Inside is the key & finishes the connection to discord.
+client.run('NzQ0NzU3ODM3NDYwNDA2MzMy.Xzn3yQ.IkMdHti9Znrb58yWpVNymYw8YMw') # Inside is the key & finishes the connection to discord.
